@@ -1,0 +1,154 @@
+/* Basic Style */
+*{
+  margin:0;
+  box-sizing: border-box;
+}
+body {
+  background:url("https://static.wixstatic.com/media/3cd6ac_17d4492a2aa74a9393701bed9d8888be~mv2.gif")no-repeat;
+  color: #333;
+  font-family: Lato, sans-serif;
+  background-color:aqua;
+}
+.header{
+  margin-top:0px;
+  background-color: salmon;
+}
+.header h1{
+  margin-left:10px;
+  display:flex;
+  justify-content: center;
+  /*color: darkgreen;*/
+  font-weight: 900;
+}
+.header date{
+  margin:10px;
+font-weight:bold;
+}
+.image{
+  margin:10px;
+  margin:0px;
+  display: flex;
+  justify-content:flex-end;
+  margin-left:30em;
+}
+.container {
+  display:block;
+  width:100%;
+  margin:0;
+}
+ul {
+  margin-top: 0;
+  padding:0;
+}
+li * {
+  float: left;
+}
+li, h3 {
+  clear:both;
+  list-style:none;
+}
+input, button {
+  outline: none;
+}
+button {
+  background:#fff;
+  border:0px;
+  color:black;
+  border-radius:25px;
+  margin:10px 0 0;
+  font-size: 15px;
+  width: 60px;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+  transition:1s;
+  transition-property:background;
+}
+button:not(:last-child){
+	margin-right:30px;
+}
+button:hover {
+  background:darkorchid;
+}
+/* Heading */
+h3,
+label[for='new-task'] {
+  text-align:center;
+  color:deeppink;
+  font-weight: 700;
+  font-size: 15px;
+  background-color:darkslategrey;
+  padding: 10px 0 10px;
+  margin:0px;
+  text-transform: uppercase;
+}
+input[type="text"] {
+  margin: 0;
+  font-size: 18px;
+  height: 18px;
+  padding: 15px;
+  border: 1px solid #888;
+  background: #fff;
+  border-radius:8px;
+  font-family: Lato, sans-serif;
+  color: #888;
+}
+input[type="text"]:focus {
+  color:black;
+}
+
+/* New Task */
+label[for='new-task'] {
+  display: block;
+  margin: 0 0 20px;
+}
+input#new-task {
+  text-align: center;
+  float:left;
+  width: 318px;
+}
+p > button:hover {
+  background: #0FC57C;
+}
+
+/* Task list */
+li {
+  overflow: hidden;
+  padding: 20px 0;
+  border-bottom:1px solid #0FC57C;
+}
+li > input[type="checkbox"] {
+  margin: 0 10px;
+  position: relative;
+  top: 15px;
+}
+li > label {
+  font-size: 18px;
+  line-height: 40px;
+  width: 237px;
+  padding: 0 0 0 11px;
+}
+li >  input[type="text"] {
+  width: 226px;
+}
+li > .delete:hover {
+  background-color:orangered;
+}
+
+/* Completed */
+#completed-tasks label {
+  text-decoration: line-through;
+    color: #888;
+}
+
+/* Edit Task */
+ul li input[type=text] {
+  display:none;
+}
+
+ul li.editMode input[type=text] {
+  display:block;
+}
+
+ul li.editMode label {
+  display:none;
+}
